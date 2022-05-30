@@ -1,0 +1,37 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.grid {
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.text{
+  margin: 15px auto;
+  font-size: 35px;
+  font-weight: 500;
+}
+.player_x{
+  color: rgba(155, 22, 22, 0.78);
+}
+.player_o{
+  color: rgba(22, 155, 22, 0.78);
+}
+.reset{
+  background-color: rgba(0, 85, 213, 0.78);
+  color: #fefefe;
+  border: none;
+  border-radius: 6px;
+  padding: 12.5px 30px;
+  margin: 15px auto;
+  font-size: 17px;
+  transition: box-shadow 0.17s ease-in-out;
+
+}
+.reset:hover{
+  box-shadow: 0 0 6px #0006;
+
+}
