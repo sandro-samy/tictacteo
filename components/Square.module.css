@@ -18,9 +18,7 @@
 .square_o {
   background-color: rgba(22, 155, 22, 0.78);
 }
-.square_x:hover,
-.square_o:hover {
+.square[disabled] {
   box-shadow: none;
   cursor: default;
-
 }

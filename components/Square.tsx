@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Square.module.css";
-type Player = string | null;
+import { Player } from "../containers/Board";
 
 const Square = ({
   winner,
@@ -21,7 +21,10 @@ const Square = ({
     );
   }
   return (
-    <button disabled className={`${styles.square} ${styles["square_"+value.toLowerCase()]}`}>
+    <button
+      disabled
+      className={`${styles.square} ${styles["square_" + value.toLowerCase()]}`}
+    >
       {value}
     </button>
   );
